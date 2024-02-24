@@ -40,7 +40,7 @@ React hook built to simplify using Axios with Reacts and typescript.
   ```
 
 # Example usage
-  import useQuery 
+  You can now use useQuery in all your components. 
   ```
     import { useQuery } from "axios-query-hook"
   ```

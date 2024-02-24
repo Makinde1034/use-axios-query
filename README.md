@@ -39,7 +39,7 @@ React hook built to simplify using Axios with Reacts.
     }
   ```
 
-# Example usesage
+# Example usage
   import useQuery 
   ```
     import { useQuery } from "axios-query-hook"
@@ -59,6 +59,12 @@ React hook built to simplify using Axios with Reacts.
         },
     })
   ```
+# useQuery Props
+  | First Header  | Second Header |
+  | ------------- | ------------- |
+  | Content Cell  | Content Cell  |
+  | Content Cell  | Content Cell  |
+
   
   
 

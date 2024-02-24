@@ -64,8 +64,8 @@ React hook built to simplify using Axios with Reacts and typescript.
   | ------------- | ------------- | ------------|            
   | fetchOnMount  | Boolean       | Add to make as soon as component mounts |
   | data          |               | Axios Request body |
-  | Method        | "POST","GET", "PUT" e.t.c | Axios Request body |
-  
+  | Method        | "POST","GET", "PUT" e.t.c | To specify request method |
+  | url           | string        | Request route |
   
 
 

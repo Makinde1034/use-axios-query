@@ -1,4 +1,4 @@
-# React hook for axios
+# Axios hook for React
 
 React hook built to simplify using Axios with Reacts. 
 
@@ -6,7 +6,7 @@ React hook built to simplify using Axios with Reacts.
 
   Yarn
   ```
-    Iyarn add axios-query-hook
+    yarn add axios-query-hook
   ```
   NPM
   ```
@@ -17,4 +17,15 @@ React hook built to simplify using Axios with Reacts.
   Import AxiosQueryProvider 
   ```
     import { AxiosQueryProvider } from "axios-query-hook"
+  ```
+  Wrap your app with AxiosQueryProvider
+  ```
+    function App() {
+      return (
+        <AxiosQueryProvider config={config}>
+          <div className="App">
+          </div>
+        </AxiosQueryProvider>
+      )
+    }
   ```

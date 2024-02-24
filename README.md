@@ -62,7 +62,7 @@ React hook built to simplify using Axios with Reacts and typescript.
 # useQuery Props
   | Property      | Type          | Use         |
   | ------------- | ------------- | ------------|            
-  | fetchOnMount  | Boolean       | Add to make as soon as component mounts |
+  | fetchOnMount  | Boolean       | Request is sent as soon as component mounts when set to true |
   | data          |               | Axios Request body |
   | Method        | "POST","GET", "PUT" e.t.c | To specify request method |
   | url           | string        | Request route |

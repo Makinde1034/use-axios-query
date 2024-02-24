@@ -18,6 +18,15 @@ React hook built to simplify using Axios with Reacts.
   ```
     import { AxiosQueryProvider } from "axios-query-hook"
   ```
+  Decalare axios configuration. Add your API base url and headers here.
+  ```
+    const config = {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        } as AxiosRequestHeaders,
+      baseUrl: "https://dummyjson.com",
+    }
+  ```
   Wrap your app with AxiosQueryProvider
   ```
     function App() {
@@ -29,3 +38,29 @@ React hook built to simplify using Axios with Reacts.
       )
     }
   ```
+
+# Example usesage
+  import useQuery 
+  ```
+    import { useQuery } from "axios-query-hook"
+  ```
+
+  useQuery takes generic request and response types which provides expected type for both our POST request data and query response. 
+  ```
+      const { requestHandler, response, loading, error } = useQuery<
+        RegisterRequest,
+        RegisterResponse
+    >({
+        method: "POST",
+        url: "auth/login",
+        data: {
+          username: "kminchelle",
+          password: "0lelplR",
+        },
+    })
+  ```
+  
+  
+
+
+

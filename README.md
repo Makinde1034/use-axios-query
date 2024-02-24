@@ -69,6 +69,9 @@ React hook built to simplify using Axios with Reacts and typescript.
   
 
 # useQuery returns :
-  - requestHandler - Call to initiate request
+  - requestHandler - Call to initiate request.
+  - loading  - Indicates request loading state.
+  - error - contains request error when it fails.
+  - response - contains request response on success.
   
 

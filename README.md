@@ -1,6 +1,6 @@
 # Axios hook for React
 
-React hook built to simplify using Axios with Reacts. 
+React hook built to simplify using Axios with Reacts and typescript. 
 
 # Installation
 
@@ -48,8 +48,8 @@ React hook built to simplify using Axios with Reacts.
   useQuery takes generic request and response types which provides expected type for both our POST request data and query response. 
   ```
       const { requestHandler, response, loading, error } = useQuery<
-        RegisterRequest,
-        RegisterResponse
+        RegisterRequestType,
+        RegisterResponseType
     >({
         method: "POST",
         url: "auth/login",
@@ -60,11 +60,11 @@ React hook built to simplify using Axios with Reacts.
     })
   ```
 # useQuery Props
-  | First Header  | Second Header |
-  | ------------- | ------------- |
-  | Content Cell  | Content Cell  |
-  | Content Cell  | Content Cell  |
-
+  | Property      | Type          | Use         |
+  | ------------- | ------------- | ------------|            
+  | fetchOnMount  | Boolean       | Add to make as soon as component mounts |
+  | data          |               | Axios Request body |
+  | Method        | "POST","GET", "PUT" e.t.c | Axios Request body |
   
   
 
